@@ -20,7 +20,7 @@ function detectGateway(data: ReportData | null): "sinch" | "pontal" | null {
 }
 
 export function ProviderStrip({ data, onBlurChange }: Props) {
-  const [blurred, setBlurred] = useState(false);
+  const [blurred, setBlurred] = useState(true);
 
   const toggle = () => {
     const next = !blurred;
